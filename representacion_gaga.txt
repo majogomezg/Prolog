@@ -1,0 +1,16 @@
+Meta: ¬ParticipaEnAlbum(beyonce, the_fame_monster)
+
+             ¬ParticipaEnAlbum(beyonce, the_fame_monster)   (¬Q)
+                                   ▲
+                                   │ (resolución)
+             ParticipaEnAlbum(beyonce, the_fame_monster)    (C3)
+                                   ▲
+                                   │  con C2 y F2
+     ¬IncluidaEn(telephone, the_fame_monster) ∨ ParticipaEnAlbum(... )  (C2)
+                                   ▲
+                                   │  con R10  MGU {X=beyonce,S=telephone,A=the_fame_monster}
+                 Interpreta(beyonce, telephone)             (C1)
+                                   ▲
+                                   │  con R9b  MGU {X=gaga,Y=beyonce,S=telephone}
+                 Colabora(gaga, beyonce, telephone)         (F0)
+                 IncluidaEn(telephone, the_fame_monster)    (F2)

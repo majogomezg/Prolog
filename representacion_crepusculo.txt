@@ -1,0 +1,14 @@
+Meta: ¬NoEnvejece(edward)
+
+          ¬NoEnvejece(edward)
+                    ▲
+                    │ (resolución)
+          NoEnvejece(edward)            (C2)
+                    ▲
+                    │  con R8: ¬Inmortal(X) ∨ NoEnvejece(X)
+                    │         MGU {X=edward}
+          Inmortal(edward)              (C1)
+                    ▲
+                    │  con R3: ¬Vampiro(X) ∨ Inmortal(X)
+                    │         MGU {X=edward}
+           Vampiro(edward)              (F1)

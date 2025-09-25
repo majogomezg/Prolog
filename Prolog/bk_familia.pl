@@ -1,11 +1,6 @@
 % =========================================================
 % BK #1 - Familia (Prolog)
-% Hechos y reglas en formato de cláusulas de Horn
-% ---------------------------------------------------------
-% NOTA: Ajusta/añade hechos de tu familia real si quieres.
-%       Si tu docente pide marcar contenido generado con IA,
-%       agrega aquí tu comentario según la guía del curso.
-% =========================================================
+% Hechos y reglas en formato de cláusulas de Horn (es una cláusula que tiene a lo sumo un literal positivo (es decir, como máximo una conclusión afirmativa))
 
 % ---------- Hechos ----------
 madre(bibi, majo).
@@ -36,6 +31,7 @@ tiene_madre(Y) :- madre(_, Y).
 % Nadie es su propio padre/madre (integridad).
 % En Prolog clásico no imponemos restricciones globales,
 % pero podemos ofrecer cheques para validación:
+%Clausula realizada con IA: DAME UN EJEMPLO DE CLÁUSULA DE HORN Y RESTRICCIONES GLOBALES
 inconsistente_padre(X) :- padre(X, X).
 inconsistente_madre(X) :- madre(X, X).
 

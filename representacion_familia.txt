@@ -1,0 +1,31 @@
+Meta: ¬Abuelo(hugo, majo)
+
+            ¬Abuelo(hugo,majo)
+                   ▲
+                   │ (resolución)
+            Abuelo(hugo,majo)   (C6)
+                   ▲
+        ┌──────────┴──────────┐
+        │                     │
+ ¬Progenitor(bibi,majo) ∨ Abuelo(hugo,majo) (C5)   Progenitor(bibi,majo) (C3)
+                 ▲                                      ▲
+                 │                                      │
+ ¬Progenitor(hugo,bibi) ∨ ¬Progenitor(bibi,majo) ∨ Abuelo(hugo,majo) (C4)
+                 ▲
+        ┌────────┴───────────┐
+        │                    │
+     Hombre(hugo) (C1)     Progenitor(hugo,bibi) (C2)
+        ▲                        ▲
+ Padre(hugo,bibi) (F1)     Padre(hugo,bibi) (F1)
+                             
+   Madre(bibi,majo) (F2) ────────────────► Progenitor(bibi,majo) (C3)
+
+
+
+{X=hugo, Y=bibi} para C1 y C2
+
+{X=bibi, Y=majo} para C3
+
+{X=hugo, Z=bibi, Y=majo} en R14c para C4
+
+Al final llegamos a la (contradicción), que prueba que Abuelo(hugo,majo) es cierto.
